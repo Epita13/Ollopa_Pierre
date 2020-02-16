@@ -16,7 +16,7 @@ public class BasicPlacement : Node2D
 	private static List<Building> placedBuilding = new List<Building>();
 
 	/// Verifie si le block en x y est de l'air
-	public static bool IsAir(int x, int y)
+	private static bool IsAir(int x, int y)
 	{
 		bool res = true;
 		Block b = World.GetBlock(x, y);
@@ -26,7 +26,7 @@ public class BasicPlacement : Node2D
 	}
 
 	/// Verifie si la case est sur le sol
-	public static bool IsOnFloor(int x, int y)
+	private static bool IsOnFloor(int x, int y)
 	{
 		bool res = true;
 		Block b = World.GetBlock(x, y - 1);
@@ -36,7 +36,7 @@ public class BasicPlacement : Node2D
 	}
 
 	/// Verifie si la case contient un batiment
-	public static bool IsNoBuilding(int x, int y)
+	private static bool IsNoBuilding(int x, int y)
 	{
 		bool res = true;
 		int i = 0;
@@ -57,14 +57,14 @@ public class BasicPlacement : Node2D
 	}
 	
 
-	/// Verifie si le batiment est placable 
-	public static bool IsPlacable(int x, int y, int sizeX, int sizeY)
+	/// Verifie si le batiment est placable a droite
+	public static bool IsPlacableRight(int x, int y, int sizeX, int sizeY)
 	{
 		bool res = true;
 		int i = 0;
 		while (i < sizeX && res)
 		{
-			res = res && IsOnFloor(x+i,y) && IsAir(x+i, y) && IsNoBuilding(x+1,y);
+			res = res && IsOnFloor(x+i,y) && IsAir(x+i, y) && IsNoBuilding(x+i,y);
 			i++;
 		}
 
@@ -82,20 +82,60 @@ public class BasicPlacement : Node2D
 		}
 		return res;
 	}
+	/// Verifie si le batiment est placable a gauche
+	public static bool IsPlacableLeft(int x, int y, int sizeX, int sizeY)
+	{
+		bool res = true;
+		int i = 0;
+		while (i < sizeX && res)
+		{
+			res = res && IsOnFloor(x-i,y) && IsAir(x-i, y) && IsNoBuilding(x-i,y);
+			i++;
+		}
+
+		int j = 1;
+
+		while (j < sizeY && res)
+		{
+			i = 0;
+			while (i < sizeX && res)
+			{
+				res = res && IsAir(x-i-1, y+j) && IsNoBuilding(x-i,y+j);;
+				i++;
+			}
+			j++;
+		}
+		return res;
+	}
+
 
 	///place un batiment selon les regles
-	public static void PlaceWithMouse(Building building,Vector2 mouse)
+	public static void PlaceWithMouse(Building building,Vector2 mouse,bool right)
 	{
 		Vector2 mouseC = Convertion.Location2WorldFloor(mouse);
-		if (IsPlacable((int)mouseC.x,(int)mouseC.y,building.size,building.size))
+		if (right)
 		{
-			mouseC.x += building.size / 2;
-			mouseC.y += building.size / 2;
-			building.Place(mouseC);
-			placedBuilding.Add(building);
-			
+			if (IsPlacableRight((int) mouseC.x, (int) mouseC.y, building.size, building.size))
+			{
+				mouseC.x += building.size / 2;
+				mouseC.y += building.size / 2;
+				building.Place(mouseC);
+				placedBuilding.Add(building);
+
+			}
+		}
+		else
+		{
+			if (IsPlacableLeft((int) mouseC.x, (int) mouseC.y, building.size, building.size))
+			{
+				mouseC.x -= building.size / 2 - 1;
+				mouseC.y += building.size / 2;
+				building.Place(mouseC);
+				placedBuilding.Add(building);
+			}
 		}
 	}
+	
 
 }
 

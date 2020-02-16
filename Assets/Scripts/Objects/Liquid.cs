@@ -106,7 +106,7 @@ public class Liquid : TileMap
 						 /*Cas bloc ou mur a gauche et PAS a gauche*/
 						 Mouvement(ref map, x, y, 'R');
 					 else if ((map[x + 1, y] == 0 || x == map.GetUpperBound(0)) && map[x - 1, y] != 0 &&
-					          differenceLeft != 0)
+							  differenceLeft != 0)
 						 /*Cas block ou mur a gauche et PAS a droite*/
 						 Mouvement(ref map, x, y, 'L');
 				 }
