@@ -8,9 +8,9 @@ public class Storage : Building
 	//Initialistaion des différents type de stockage
  	
 	//bois, composite (matieres premieres)
-	public static StorageItems storageItems = new StorageItems(750);
-	//eau, petrole (Liquide)
-	public static StorageLiquids storageLiquids = new StorageLiquids(150.0f);
+    public static StorageItems storageItems = new StorageItems(750);
+    //eau, petrole (Liquide)
+    public static StorageLiquids storageLiquids = new StorageLiquids(150.0f);
 	//energy
 	public float energy = 0;
 	public float maxEnergy  = 1000f;
@@ -24,16 +24,16 @@ public class Storage : Building
 	public int id;
 
 	//Initialisation
-	public Storage() : base (150)
-	{
-		this.id = nbStorage;
+    public Storage() : base (150)
+    {
+        this.id = nbStorage;
 		nbStorage += 1;
-	}
+    }
 	
 	 public override void _Ready()
-	{
+    {
 
-	}
+    }
 	
 	public void AddEnergy(float amount)
 	{

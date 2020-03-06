@@ -8,12 +8,11 @@ public class PlayerInputs : Node2D
 	[Signal] delegate void BlockPlaced();
 
 	private Vector2 mousePos;
-	private PlayerState.State LastState;
-	private Usable.Type LastSelectedUsable;
+	private PlayerState.State lastState;
+	private Usable.Type lastSelectedUsable;
 
 	public override void _Ready()
 	{
-		PlayerState.SetState(PlayerState.State.Build);
 		Player.inventoryUsables.Add(Usable.Type.Dirt, 10);
 		Player.inventoryUsables.Add(Usable.Type.Grass, 10);
 		Player.inventoryUsables.Add(Usable.Type.Stone, 10);
@@ -29,11 +28,11 @@ public class PlayerInputs : Node2D
 	public override void _Process(float delta)
 	{
 		
-		if (LastState!=PlayerState.GetState() || LastSelectedUsable!=Player.UsableSelected)
+		if (lastState!=PlayerState.GetState() || lastSelectedUsable!=Player.UsableSelected)
 		{
 			World.UIBlockTilemap.Clear();
-			LastSelectedUsable = Player.UsableSelected;
-			LastState = PlayerState.GetState();
+			lastSelectedUsable = Player.UsableSelected;
+			lastState = PlayerState.GetState();
 		}
 
 		mousePos = Convertion.Location2WorldFloor(GetGlobalMousePosition());
@@ -64,7 +63,14 @@ public class PlayerInputs : Node2D
 		}
 		else if (Input.IsActionJustPressed("mouse2"))
 		{
-
+			if (PlayerState.GetState() == PlayerState.State.Normal)
+			{
+				PlayerState.SetState(PlayerState.State.Build);
+			}
+			else
+			{
+				PlayerState.SetState(PlayerState.State.Normal);
+			}
 		}
 	}
 

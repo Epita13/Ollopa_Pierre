@@ -3,13 +3,3 @@ D:\thimo\Documents\EPITA\Ollopa\Ollopa_main\.mono\temp\bin\Tools\ThirteenProject
 D:\thimo\Documents\EPITA\Ollopa\Ollopa_main\.mono\temp\bin\Tools\ThirteenProject.pdb
 D:\thimo\Documents\EPITA\Ollopa\Ollopa_main\.mono\temp\obj\Tools\ThirteenProject.dll
 D:\thimo\Documents\EPITA\Ollopa\Ollopa_main\.mono\temp\obj\Tools\ThirteenProject.pdb
-C:\Users\pili2\Documents\GitHub\Ollopa_main\.mono\temp\bin\Tools\ThirteenProject.dll
-C:\Users\pili2\Documents\GitHub\Ollopa_main\.mono\temp\bin\Tools\ThirteenProject.pdb
-C:\Users\pili2\Documents\GitHub\Ollopa_main\.mono\temp\obj\Tools\ThirteenProject.csprojAssemblyReference.cache
-C:\Users\pili2\Documents\GitHub\Ollopa_main\.mono\temp\obj\Tools\ThirteenProject.dll
-C:\Users\pili2\Documents\GitHub\Ollopa_main\.mono\temp\obj\Tools\ThirteenProject.pdb
-C:\Users\pili2\Documents\GitHub\Ollopa_Pierre\.mono\temp\bin\Tools\ThirteenProject.dll
-C:\Users\pili2\Documents\GitHub\Ollopa_Pierre\.mono\temp\bin\Tools\ThirteenProject.pdb
-C:\Users\pili2\Documents\GitHub\Ollopa_Pierre\.mono\temp\obj\Tools\ThirteenProject.csprojAssemblyReference.cache
-C:\Users\pili2\Documents\GitHub\Ollopa_Pierre\.mono\temp\obj\Tools\ThirteenProject.dll
-C:\Users\pili2\Documents\GitHub\Ollopa_Pierre\.mono\temp\obj\Tools\ThirteenProject.pdb
