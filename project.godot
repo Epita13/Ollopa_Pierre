@@ -21,10 +21,9 @@ config/icon="res://icon.png"
 
 [display]
 
-window/size/width=1800
-window/size/height=900
-window/stretch/mode="viewport"
-window/stretch/aspect="keep_height"
+window/size/width=1000
+window/size/height=720
+window/stretch/aspect="keep"
 
 [input]
 
@@ -46,6 +45,11 @@ mouse1={
 mouse2={
 "deadzone": 0.5,
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+inventory={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":73,"unicode":0,"echo":false,"script":null)
  ]
 }
 

@@ -4,6 +4,8 @@ using System;
 public class PlayerInputs : Node2D
 {
 
+	public static bool playerInputActive = true;
+	
 
 	[Signal] delegate void BlockPlaced();
 
@@ -13,20 +15,25 @@ public class PlayerInputs : Node2D
 
 	public override void _Ready()
 	{
-		Player.inventoryUsables.Add(Usable.Type.Dirt, 10);
-		Player.inventoryUsables.Add(Usable.Type.Grass, 10);
-		Player.inventoryUsables.Add(Usable.Type.Stone, 10);
+		Player.inventoryUsables.Add(Usable.Type.Dirt, 30);
+		Player.inventoryUsables.Add(Usable.Type.Grass, 30);
+		Player.inventoryUsables.Add(Usable.Type.Stone, 30);
 		ConnectSignals();
+		Player.inventoryItems.Add(Item.Type.Composite, 12);
+
 	}
 
 	private void ConnectSignals()
 	{
-		Connect("BlockPlaced", (Node)GetTree().GetNodesInGroup("ToolBar")[0], "SendRefresh"); // Pour Actualisation de la ToolBar
+		if (GetTree().GetNodesInGroup("ToolBar").Count==1)
+			Connect("BlockPlaced", (Node)GetTree().GetNodesInGroup("ToolBar")[0], "SendRefresh"); // Pour Actualisation de la ToolBar
 	}
 
   
 	public override void _Process(float delta)
 	{
+		if (!playerInputActive)
+			return;
 		
 		if (lastState!=PlayerState.GetState() || lastSelectedUsable!=Player.UsableSelected)
 		{
@@ -48,8 +55,13 @@ public class PlayerInputs : Node2D
 		}
 
 
+		/* Inventory Click */
+		if (Input.IsActionJustPressed("inventory"))
+		{
+			InventoryClick();
+		}		
+		
 		//Inputs
-
 		if (Input.IsActionJustPressed("mouse1"))
 		{
 			if (PlayerState.GetState() == PlayerState.State.Normal)
@@ -60,6 +72,7 @@ public class PlayerInputs : Node2D
 			{
 				ClickBuildState();
 			}
+			
 		}
 		else if (Input.IsActionJustPressed("mouse2"))
 		{
@@ -181,14 +194,13 @@ public class PlayerInputs : Node2D
 				}
 			}else
 			{
-				World.GetChunk((int)mousePos.x).RemoveBlock(Chunk.GetLocaleX((int)mousePos.x), (int)mousePos.y);
+				//World.GetChunk((int)mousePos.x).RemoveBlock(Chunk.GetLocaleX((int)mousePos.x), (int)mousePos.y);
 			}
 		}
 	}
 
 	private void ClickBuildState()
 	{
-		//GD.Print(MouseInRange(9,true));
 		Vector2 playerPos = Convertion.Location2World(PlayerMouvements.instance.Position);
 		bool right = playerPos.x-1 < mousePos.x;
 		if (MouseInRange(10,true))
@@ -217,7 +229,19 @@ public class PlayerInputs : Node2D
 	}
 
 
-
+	private void InventoryClick()
+	{
+		if (PlayerState.GetState() != PlayerState.State.Inventory)
+		{
+			PlayerState.SetState(PlayerState.State.Inventory);
+			UI_PlayerInventory.Open("item");
+			GD.Print("okok");
+		}
+		else
+		{
+			UI_PlayerInventory.Close();
+		}
+	}
 
 
 }

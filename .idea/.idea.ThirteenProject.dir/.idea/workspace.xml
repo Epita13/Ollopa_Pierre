@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ac3bbbf-e6d7-4d4a-a593-740dc92e2ab0" name="Default Changelist" comment="" />
+    <list default="true" id="618defd6-87ef-457c-9de3-3138c9a1c223" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/StorageBuildings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.import/Back.png-590c339a114c6df338b26fcbe15139a3.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/Back.png-590c339a114c6df338b26fcbe15139a3.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.import/dirt.png-2b0ae5f6e7e3c0a901673db4c38a5a39.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/dirt.png-2b0ae5f6e7e3c0a901673db4c38a5a39.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.import/grass.png-dc28486fe36b4439606c3855a0ce62ba.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/grass.png-dc28486fe36b4439606c3855a0ce62ba.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.import/stone.png-697b62b504ba8ac6e93530564c94affd.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/stone.png-697b62b504ba8ac6e93530564c94affd.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.import/ui_no.png-48751f7e8781a7d36d03b621a322f7da.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/ui_no.png-48751f7e8781a7d36d03b621a322f7da.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.import/ui_yes.png-ca9bacf5aefcce02c69ab5c95f6fcee6.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/ui_yes.png-ca9bacf5aefcce02c69ab5c95f6fcee6.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharpEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharpEditor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/assemblies/Debug/api_hash_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/assemblies/Debug/api_hash_cache.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Tools/ThirteenProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Tools/ThirteenProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Tools/ThirteenProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Tools/ThirteenProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Debug/ThirteenProject.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Debug/ThirteenProject.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Buildings/SolarPanel/SolarPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Buildings/SolarPanel/SolarPanel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Objects/Player/PlayerMouvements.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Player/PlayerMouvements.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/EnvironmentSpriteAtlas.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/EnvironmentSpriteAtlas.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/backSky.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/backSky.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/backSky2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/backSky2.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/mountains.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/mountains.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/sunlight.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/sunlight.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Items/loot/loot.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Items/loot/loot.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Joueur/PointLigth.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Joueur/PointLigth.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/dirt.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/dirt.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/grass.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/grass.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/stone.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/stone.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Particle_Ray.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Particle_Ray.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Raygun.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Raygun.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Sparkle.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Sparkle.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/ray.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/ray.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/ray2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/ray2.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/Back/Back.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/Back/Back.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_break.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_break.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_no.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_no.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_place.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_place.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_yes.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_yes.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/dirt.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/dirt.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/grass.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/grass.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/stone.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/stone.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneGeneration/SceneGenerationScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneGeneration/SceneGenerationScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Autres/Environement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Autres/Environement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Block.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Building.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Chunk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/StorageItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/StorageItems.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/World.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/World.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tools/BasicPlacement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/BasicPlacement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThirteenProject.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ThirteenProject.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/default_env.tres" beforeDir="false" afterPath="$PROJECT_DIR$/default_env.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,20 +72,44 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Building.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/PlayerState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/StorageBuildings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/StorageItems.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/StorageLiquids.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Objects/Autres/Loot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/SceneGeneration/SceneGenerationScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Objects/Player/PlayerMouvements.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/World.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tools/BasicPlacement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/StorageUsables.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Tools/BasicPlacement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/BuildingInventory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/StorageBuildings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Objects/Player/PlayerMouvements.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/SceneGeneration/SceneGenerationScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Building.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1YlOeuOZWVF3n7hM5bwKCcQmigG" />
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\pili2\Documents\GitHub\Ollopa_main\.idea\.idea.ThirteenProject.dir\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZZW3B1djmkATXBZElKqUHB5ZiS" />
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RunDashboard">
@@ -45,26 +129,29 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0ac3bbbf-e6d7-4d4a-a593-740dc92e2ab0" name="Default Changelist" comment="" />
-      <created>1583513818140</created>
+      <changelist id="618defd6-87ef-457c-9de3-3138c9a1c223" name="Default Changelist" comment="" />
+      <created>1585046899201</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1583513818140</updated>
-      <workItem from="1583513828513" duration="1668000" />
+      <updated>1585046899201</updated>
+      <workItem from="1585046907724" duration="3397000" />
+      <workItem from="1585243322539" duration="5434000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

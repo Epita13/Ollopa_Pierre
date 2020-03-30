@@ -42,6 +42,7 @@ public static class World
 	public static TileMap BackBlockTilemap;
 	public static TileMap BlockTilemap;
 	public static TileMap UIBlockTilemap;
+	public static TileMap UI2BlockTilemap;
 	/*********/
 
 	public static Random random;
@@ -51,7 +52,7 @@ public static class World
 	private static int seed;
 	private const int octave = 3;
 	private const float periode = 20.0f;
-	private const float persistence = 0.25f;
+	private const float persistence = 0.1f;
 	private const float lacunarity = 3.5f;
 	
 	public static int size;
@@ -67,7 +68,7 @@ public static class World
 
 
 	/// Initialise le monde et le calcule.
-	public static void Init(int size, TileMap BlockTilemap, TileMap UIBlockTilemap, TileMap BackBlockTilemap, int seed = -1)
+	public static void Init(int size, TileMap BlockTilemap, TileMap UIBlockTilemap, TileMap UI2BlockTilemap, TileMap BackBlockTilemap, int seed = -1)
 	{
 		isInit = true;
 		if (seed==-1){
@@ -78,12 +79,13 @@ public static class World
 			World.seed = seed;
 		}
 		
-		if (size <= 3)
+		if (size < 3)
 			throw new OutOfBoundsException1D("Init", size, 3, 9999);
 		
 		World.size = size;
 		World.BlockTilemap = BlockTilemap;
 		World.UIBlockTilemap = UIBlockTilemap;
+		World.UI2BlockTilemap = UI2BlockTilemap;
 		World.BackBlockTilemap = BackBlockTilemap;
 		World.chunks = new List<Chunk>();
 
