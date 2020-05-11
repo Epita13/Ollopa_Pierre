@@ -8,8 +8,11 @@ D:\thimo\Documents\EPITA\Ollopa\Ollopa_Thimot\.mono\temp\obj\Tools\ThirteenProje
 D:\thimo\Documents\EPITA\Ollopa\Ollopa_Thimot\.mono\temp\obj\Tools\ThirteenProject.pdb
 D:\thimo\Documents\EPITA\Ollopa\Ollopa_Thimot\.mono\temp\bin\Tools\ThirteenProject.dll
 D:\thimo\Documents\EPITA\Ollopa\Ollopa_Thimot\.mono\temp\bin\Tools\ThirteenProject.pdb
-C:\Users\pili2\Documents\GitHub\Ollopa_main\.mono\temp\bin\Tools\ThirteenProject.dll
-C:\Users\pili2\Documents\GitHub\Ollopa_main\.mono\temp\bin\Tools\ThirteenProject.pdb
-C:\Users\pili2\Documents\GitHub\Ollopa_main\.mono\temp\obj\Tools\ThirteenProject.csprojAssemblyReference.cache
-C:\Users\pili2\Documents\GitHub\Ollopa_main\.mono\temp\obj\Tools\ThirteenProject.dll
-C:\Users\pili2\Documents\GitHub\Ollopa_main\.mono\temp\obj\Tools\ThirteenProject.pdb
+C:\Users\pili2\Documents\GitHub\Ollopa_main - Copie\.mono\temp\bin\Tools\ThirteenProject.dll
+C:\Users\pili2\Documents\GitHub\Ollopa_main - Copie\.mono\temp\bin\Tools\ThirteenProject.pdb
+C:\Users\pili2\Documents\GitHub\Ollopa_main - Copie\.mono\temp\bin\Tools\Newtonsoft.Json.dll
+C:\Users\pili2\Documents\GitHub\Ollopa_main - Copie\.mono\temp\bin\Tools\Newtonsoft.Json.xml
+C:\Users\pili2\Documents\GitHub\Ollopa_main - Copie\.mono\temp\obj\Tools\ThirteenProject.csprojAssemblyReference.cache
+C:\Users\pili2\Documents\GitHub\Ollopa_main - Copie\.mono\temp\obj\Tools\ThirteenProject.csproj.CopyComplete
+C:\Users\pili2\Documents\GitHub\Ollopa_main - Copie\.mono\temp\obj\Tools\ThirteenProject.dll
+C:\Users\pili2\Documents\GitHub\Ollopa_main - Copie\.mono\temp\obj\Tools\ThirteenProject.pdb
