@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/forreuse.png-7fb6105b0c39be18210cf4f59f47aba4.stex"
+path="res://.import/forreuse.png-7c169b475feaaa29cf4e71daeabb980a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ressources/Imgs/Buildings/Drill/forreuse.png"
-dest_files=[ "res://.import/forreuse.png-7fb6105b0c39be18210cf4f59f47aba4.stex" ]
+source_file="res://Assets/Ressources/Imgs/Buildings/drill/forreuse.png"
+dest_files=[ "res://.import/forreuse.png-7c169b475feaaa29cf4e71daeabb980a.stex" ]
 
 [params]
 

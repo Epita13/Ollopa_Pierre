@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/roue forreuse.png-da4ec14279c9693ddb14192d66678610.stex"
+path="res://.import/roue forreuse.png-5971c920143f7979333e99da717127af.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Ressources/Imgs/Buildings/Drill/roue forreuse.png"
-dest_files=[ "res://.import/roue forreuse.png-da4ec14279c9693ddb14192d66678610.stex" ]
+source_file="res://Assets/Ressources/Imgs/Buildings/drill/roue forreuse.png"
+dest_files=[ "res://.import/roue forreuse.png-5971c920143f7979333e99da717127af.stex" ]
 
 [params]
 
