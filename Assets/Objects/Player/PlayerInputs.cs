@@ -7,32 +7,10 @@ public class PlayerInputs : Node2D
 	public static bool playerInputActive = true;
 	
 
-	[Signal] delegate void BlockPlaced();
-
 	private Vector2 mousePos;
 	private PlayerState.State lastState;
 	private Usable.Type lastSelectedUsable;
 
-	public override void _Ready()
-	{
-		Player.inventoryUsables.Add(Usable.Type.Dirt, 30);
-		Player.inventoryUsables.Add(Usable.Type.Grass, 30);
-		Player.inventoryUsables.Add(Usable.Type.Stone, 300);
-		Player.inventoryBuildings.Add(Building.Type.SolarPanel, 2);
-		Player.inventoryBuildings.Add(Building.Type.Storage, 3);
-		Player.inventoryBuildings.Add(Building.Type.Printer3D, 3);
-		ConnectSignals();
-		Player.inventoryItems.Add(Item.Type.Composite, 120);
-
-	}
-
-	private void ConnectSignals()
-	{
-		if (GetTree().GetNodesInGroup("ToolBar").Count==1)
-			Connect("BlockPlaced", (Node)GetTree().GetNodesInGroup("ToolBar")[0], "SendRefresh"); // Pour Actualisation de la ToolBar
-	}
-
-  
 	public override void _Process(float delta)
 	{
 		
@@ -78,7 +56,8 @@ public class PlayerInputs : Node2D
 			}else if (PlayerState.GetState() == PlayerState.State.BuildingInterface)
 			{
 				BuildingInterface.CloseInterface();
-			}else if (PlayerState.GetState() == PlayerState.State.Link)
+			}
+			else if (PlayerState.GetState() == PlayerState.State.Link)
 			{
 				Link._Link();
 				Link.Reset();
@@ -102,6 +81,11 @@ public class PlayerInputs : Node2D
 				if (Building.HasBuildingSelected)
 				{
 					ClickOnBuilding();
+				}
+
+				if (SpaceShip.ShipSelected)
+				{
+					SpaceShipClick();
 				}
 			}
 			if (PlayerState.GetState() == PlayerState.State.Link)
@@ -304,6 +288,17 @@ public class PlayerInputs : Node2D
 			UI_PlayerInventory2.Close();
 		}
 	}
-
+	
+	private void SpaceShipClick()
+	{
+		if (MouseInRange(10, true))
+		{
+			if(!SpaceShip.inventoryOpen)
+				SpaceShip.open_interface();
+			else
+				SpaceShip.close_interface();	
+		}
+		
+	}
 
 }

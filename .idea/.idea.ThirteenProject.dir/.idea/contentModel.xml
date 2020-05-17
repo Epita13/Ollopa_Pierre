@@ -3,12 +3,15 @@
   <component name="ContentModelStore">
     <e p="C:\Users\pili2\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\pili2\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_.19.00" t="ExcludeRecursive" />
-    <e p="C:\Users\pili2\Documents\GitHub\Ollopa_main - Copie" t="IncludeRecursive">
+    <e p="C:\Users\pili2\Documents\GitHub\Ollopa_main" t="IncludeRecursive">
       <e p=".mono\temp\bin" t="ExcludeRecursive" />
       <e p=".mono\temp\obj" t="ExcludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Objects" t="Include">
           <e p="Autres" t="Include">
+            <e p="Grass" t="Include">
+              <e p="Grass.cs" t="Include" />
+            </e>
             <e p="Loot.cs" t="Include" />
             <e p="Tree" t="Include">
               <e p="Tree.cs" t="Include" />
@@ -17,6 +20,9 @@
           <e p="Buildings" t="Include">
             <e p="Barrel" t="Include">
               <e p="Barrel.cs" t="Include" />
+            </e>
+            <e p="Compactor" t="Include">
+              <e p="Compactor.cs" t="Include" />
             </e>
             <e p="Printer3D" t="Include">
               <e p="Printer3D.cs" t="Include" />
@@ -46,12 +52,18 @@
           </e>
           <e p="UI" t="Include">
             <e p="Building" t="Include">
+              <e p="CompactorInterface.cs" t="Include" />
               <e p="Printer3DInterface.cs" t="Include" />
               <e p="SolarPanelInterface.cs" t="Include" />
+              <e p="SpaceShipInterface.cs" t="Include" />
               <e p="StorageInterface.cs" t="Include" />
             </e>
             <e p="Graphics" t="Include">
               <e p="Graph.cs" t="Include" />
+            </e>
+            <e p="Menus" t="Include">
+              <e p="DeathMenu.cs" t="Include" />
+              <e p="EndMenu.cs" t="Include" />
             </e>
             <e p="Notification" t="Include">
               <e p="Notifications.cs" t="Include" />

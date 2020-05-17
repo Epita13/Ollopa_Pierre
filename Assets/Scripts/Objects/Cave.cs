@@ -3,7 +3,7 @@ using System;
 
 public class Cave
 {
-    private static double initchance = 0.432F;
+    private static double initchance = 0.41F;
     private static int xmax = World.size * Chunk.size;
     private static int ymax = Chunk.maxYGeneration;
     private static int deathlimit = 4;

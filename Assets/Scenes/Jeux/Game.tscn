@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Assets/Scenes/Jeux/Game.cs" type="Script" id=1]
 [ext_resource path="res://Assets/Objects/Player/Player.tscn" type="PackedScene" id=2]
@@ -13,6 +13,8 @@
 [ext_resource path="res://Assets/Objects/UI/ToolBar/ToolBar.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Assets/Objects/UI/PlayerInventory/PlayerInventory2.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Assets/Scenes/Liquid/Liquid.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Assets/Objects/UI/TestsTemporaire/ValuesPanel.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Assets/Ressources/Sounds/background sound/Gravity.res" type="AudioStream" id=15]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 8 )
@@ -32,7 +34,7 @@ texture = ExtResource( 7 )
 [node name="Tilemaps" parent="." instance=ExtResource( 3 )]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 113.786, 900 )
+position = Vector2( 113.786, -1000 )
 z_index = -1
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -57,6 +59,7 @@ y = 1344.0
 [node name="Environement" parent="." instance=ExtResource( 10 )]
 
 [node name="Canvas_DayNight" type="CanvasModulate" parent="Environement"]
+color = Color( 0.827451, 0.215686, 0.0509804, 1 )
 
 [node name="fog" type="Sprite" parent="Environement"]
 visible = false
@@ -83,5 +86,13 @@ rect_scale = Vector2( 0.5, 0.5 )
 [node name="Control" parent="CanvasLayer" instance=ExtResource( 12 )]
 visible = false
 
+[node name="ValuesPanel" parent="CanvasLayer" instance=ExtResource( 14 )]
+
 [node name="Liquid" parent="." instance=ExtResource( 13 )]
 position = Vector2( 0, 0 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 15 )
+volume_db = -6.0
+autoplay = true

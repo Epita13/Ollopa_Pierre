@@ -14,13 +14,13 @@ public class LiquidMove
 	/*Petit bug que j'ai remarqué, le block contenant de l'eau ne se mets pas à jour donc si il est seul on peut mettre
 	 bloc dessus sans que ca le fasse disparaitre*/
 	
-	private List<Tuple<int,int>> listLiquid = new List<Tuple<int,int >>{};
+	public List<Tuple<int,int>> listLiquid = new List<Tuple<int,int >>{};
 	private List<Tuple<int,int>> ToRemove = new List<Tuple<int,int>>{};
 	private const int Capacity = Liquid.Capacity;
 	private static int width; 
 	private static int height;
 	private readonly Liquid.Type type;
-	private int[,] map;
+	public int[,] map;
 	private readonly Thread init;
 	private int i = 0;
 
@@ -36,6 +36,13 @@ public class LiquidMove
 		height = Chunk.height;
 		width = World.size * Chunk.size - 1;
 		map = new int[width + 1,height];
+		for (int j = 0; j < map.GetLength(0); j++)
+		{
+			for (int k = 0; k < map.GetLength(1); k++)
+			{
+				map[j, k] = -1;
+			}
+		}
 	}
 
 	public void CloneWater(float viewportX, Vector2 origin)
@@ -106,7 +113,7 @@ public class LiquidMove
 		 for (int i = 0; i < lgr; i++)
 		 {
 			 Tuple<int, int> block = listLiquid[i];
-			 
+
 			 map[block.Item1, block.Item2] = UpdateBlock(block.Item1, block.Item2, 'C');
 			 if(block.Item1 > 0)
 				 map[block.Item1 - 1, block.Item2] = UpdateBlock(block.Item1, block.Item2, 'L');
@@ -265,7 +272,7 @@ public class LiquidMove
 	 {
 		 /*Dessine sur la Tilemap les niveaux d'eau correspondant à la matrice*/
 
-		 foreach (Tuple<int, int> block in ToRemove)
+			foreach (Tuple<int, int> block in ToRemove)
 		 {
 			 Liquid.listMap[type].SetCell(block.Item1, height - block.Item2, -1);
 			 listLiquid.Remove(block);
