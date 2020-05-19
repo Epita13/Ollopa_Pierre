@@ -9,10 +9,11 @@ public class Game : Node2D
 
 	public static Node2D root;
 	public static float WorldScreenSizeX;
-	
+	//public AudioStreamPlayer2D sound = InitSound("res://Assets/Ressources/Sounds/background sound/Gravity.res");
 
 	public override void _EnterTree()
 	{
+		//AddChild(sound);
 		Camera2D camera = GetNode<Camera2D>("Player/Camera2D");
 		CurrentCamera.Init(camera);
 		root = this;
@@ -27,10 +28,11 @@ public class Game : Node2D
 			Loot.Init(this);
 			Tree.Init(this);
 			BuildingInterface.Init(GetNode("CanvasLayer"));
-			World.SetSize(50);
 			Liquid.Init();
 			World.Init(ground, uiground, uiground2, back);
+			Structure.Init();
 			SpaceShip.Init();
+			PlayerMouvements.initialPosition = World.spawn;
 			InitialiseIverntories();
 		}
 		else
@@ -59,11 +61,30 @@ public class Game : Node2D
 		Player.inventoryBuildings.Add(Building.Type.Storage, 3);
 		Player.inventoryBuildings.Add(Building.Type.Printer3D, 3);
 		Player.inventoryBuildings.Add(Building.Type.Compactor, 3);
+		Player.inventoryBuildings.Add(Building.Type.Infirmary, 3);
+		Player.inventoryBuildings.Add(Building.Type.O2Generator, 3);
+		Player.inventoryBuildings.Add(Building.Type.OilPump, 3);
 		Player.inventoryItems.Add(Item.Type.Composite, 120);
+		
 	}
 
 
+	public override void _Process(float delta)
+	{
+		WorldScreenSizeX = GetViewport().Size.x * CurrentCamera.GetXZoom();
+		//if(sound.Playing == false)
+		//	sound.Play();
+	}
+
 	public static float GetScreenMinX() => PlayerMouvements.GetX() - (Convertion.Location2World(new Vector2(Game.WorldScreenSizeX/2, 0))).x;
 	public static float GetScreenMaxX() => PlayerMouvements.GetX() + (Convertion.Location2World(new Vector2(Game.WorldScreenSizeX/2, 0))).x;
+	
+	/*public static AudioStreamPlayer2D InitSound(string path)
+	{
+		AudioStreamPlayer2D Sound = new AudioStreamPlayer2D();
+		Sound.Stream = GD.Load<AudioStream>(path);
+		Sound.VolumeDb = 20;
+		return Sound;
+	}*/
 
 }

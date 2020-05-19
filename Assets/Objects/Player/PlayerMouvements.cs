@@ -7,6 +7,8 @@ public class PlayerMouvements : KinematicBody2D
 
 	/*Sound*/
 	private AudioStreamPlayer2D audioStream;
+	private int timer = 0;
+	private bool plouf = true;
 
 	public static bool HasPlayer = false;
 	
@@ -14,11 +16,14 @@ public class PlayerMouvements : KinematicBody2D
 	public static Vector2 size = new Vector2(1.5f,2.5f);
 
 	public static float GRAVITY = 900;
-	public static float YLIMITESPEED = 400.0f;
+	public static float YLIMITESPEED = 500.0f;
 	public static float SPEED = 125;
 	public static float JUMP_POWER = -16000;
 	public static bool canMove = true;
 
+	public static float FALLSPEEDDAMAGE1 = 400.0f; 
+	public static float FALLSPEEDDAMAGE2 = 675.0f; 
+	
 	public static float LiquidCoefMove = 1.0f; 
 
 	public static Vector2 initialPosition = new Vector2(10,46f);
@@ -100,10 +105,8 @@ public class PlayerMouvements : KinematicBody2D
 			move_right = true;
 			image.FlipH = false;
 			vel.x = SPEED * LiquidCoefMove;
-			if (IsOnFloor())
-			{
+			if(IsOnFloor())
 				bond.Play("Run");
-			}
 		}
 		else if (Input.IsActionJustReleased("ui_right") && move_left==false)
 		{
@@ -124,10 +127,8 @@ public class PlayerMouvements : KinematicBody2D
 			move_left = true;
 			image.FlipH=true;
 			vel.x = -SPEED * LiquidCoefMove;
-			if (IsOnFloor())
-			{
+			if(IsOnFloor())
 				bond.Play("Run");
-			}
 		}
 		else if (Input.IsActionJustReleased("ui_left") && move_right==false)
 		{
@@ -135,30 +136,40 @@ public class PlayerMouvements : KinematicBody2D
 			if(IsOnFloor())
 				bond.Play("Turn_Back");
 		}
-	}
 
+		if ((move_left || move_right) && IsOnFloor())
+		{
+			if(timer%15 == 0)
+				PlayerMouvements.PlaySound(Sounds.Type.PlayerStep);
+		}
+	}
 	private void JUMP(float delta)
 	{
 		AnimationPlayer bond = GetNode<AnimationPlayer>("AnimationPlayer");
 		Sprite image = GetNode<Sprite>("Image");
 		
-		if (IsOnFloor())
+		if (on_ground)
 		{
-			on_ground = true;
 			vel.y = 0;
 		}
-		else
+
+		if (plouf && !on_ground && IsInWater())
 		{
-			on_ground = false;
+			PlayerMouvements.PlaySound(Sounds.Type.PlayerPlouf);
+			plouf = false;
 		}
+
+		if (!IsInWater() && timer % 5 == 0)
+			plouf = true;
 
 		if (LiquidCoefMove != 1.0f && Input.IsActionPressed("ui_up"))
 		{
-			vel.y += JUMP_POWER * 0.2f * LiquidCoefMove * delta;
+			vel.y += JUMP_POWER * 0.1f * LiquidCoefMove * delta;
+			vel.y = vel.y < -YLIMITESPEED ? -YLIMITESPEED : vel.y;
 		}
 		else if (on_ground && Input.IsActionPressed("ui_up") && LiquidCoefMove==1.0f)
 		{
-			bond.Play("Start_Jump"); 
+			bond.Play("Start_Jump");
 			vel.y += JUMP_POWER * LiquidCoefMove * delta;
 			on_ground = false;
 		}
@@ -172,7 +183,16 @@ public class PlayerMouvements : KinematicBody2D
 	{
 		AnimationPlayer bond = GetNode<AnimationPlayer>("AnimationPlayer");
 		Sprite image = GetNode<Sprite>("Image");
-		if (IsInWater())
+		if(!isplaying)
+			InitSound("res://Assets/Ressources/Sounds/background sound/Gravity.res");
+
+		bool isOnWater = IsInWater();
+
+		if (isOnWater && LiquidCoefMove == 1.0f && Mathf.Abs(vel.y) > 80)
+		{
+			vel.y *= Liquid.density[Liquid.Type.Water];
+		}
+		if (isOnWater)
 		{
 			LiquidCoefMove = Liquid.density[Liquid.Type.Water];
 		}
@@ -187,8 +207,24 @@ public class PlayerMouvements : KinematicBody2D
 		{
 			bond.Play("Death");
 			canMove = false;
-			PlaySound(Player.Sounds.PlayerDeath);
+			PlaySound(Sounds.Type.PlayerDeath);
 			PlayerState.SetState(PlayerState.State.Dead);
+			vel = new Vector2();
+		}
+		
+		if (!on_ground && IsOnFloor())
+		{
+			on_ground = true;
+			PlayerMouvements.PlaySound(Sounds.Type.PlayerLanding);
+			if (vel.y >= FALLSPEEDDAMAGE1 && LiquidCoefMove==1.0f)
+			{
+				float a = (100.0f - 5.0f) / (FALLSPEEDDAMAGE2 - FALLSPEEDDAMAGE1);
+				float b = 5 - FALLSPEEDDAMAGE1 * a;
+				Player.RemoveHealth(a * vel.y + b);
+			}
+		}else if (!IsOnFloor())
+		{
+			on_ground = false;
 		}
 		
 		if(canMove && (PlayerState.GetState()==PlayerState.State.Normal || PlayerState.GetState()==PlayerState.State.Build || PlayerState.GetState()==PlayerState.State.Link))
@@ -204,17 +240,18 @@ public class PlayerMouvements : KinematicBody2D
 				}
 			}
 		}
-		
+
 		vel.y += GRAVITY * LiquidCoefMove * delta;
-		vel.y = vel.y < -YLIMITESPEED ? -YLIMITESPEED : vel.y; 
-		vel.y = vel.y > YLIMITESPEED ? YLIMITESPEED : vel.y; 
+
 		
 		MoveAndSlide(vel,UP);
 	}
 
+	
 	public override void _Process(float delta)
   {
-		if (World.IsInit)
+	  timer += 1;
+	  if (World.IsInit)
 		{
 			WorldEndTeleportation();
 		}
@@ -222,14 +259,16 @@ public class PlayerMouvements : KinematicBody2D
 		Player.RemoveEnergy(Player.energyLoss*delta);
 		if (Player.oxygene == 0)
 		{
-			Player.RemoveHealth(Player.oxygeneDamage*delta);
+			if(timer % 100 == 0 && PlayerState.GetState() != PlayerState.State.Dead)
+				Player.RemoveHealth(Player.oxygeneDamage*100*delta);
 		}
 		if (Player.energy == 0)
 		{
 			Player.RemoveHealth(Player.energyDamage*delta);
 		}
   }
-	
+
+
 
   private void WorldEndTeleportation()
   {
@@ -309,19 +348,37 @@ public class PlayerMouvements : KinematicBody2D
 
 
 
-  public static void PlaySound(Player.Sounds sound)
+  public static void PlaySound(Sounds.Type sound)
   {
-	 instance.PlayStream(sound);
+	  instance.PlayStream(sound);
   }
 
-  public async void PlayStream(Player.Sounds sound)
+  public async void PlayStream(Sounds.Type sound)
   {
 	  AudioStreamPlayer2D Sound = new AudioStreamPlayer2D();
-	  Sound.Stream = Player.sounds[sound];
+	  Sound.Stream = Sounds.sounds[sound];
+	  Sound.VolumeDb = Sounds.soundAjust[sound];
 	  AddChild(Sound);
 	  Sound.Play();
 	  await ToSignal(Sound, "finished");
 	  Sound.QueueFree();
   }
 
+  private bool isplaying = false;
+  public async void InitSound(string path)
+  {
+	  AudioStreamPlayer2D Sound = new AudioStreamPlayer2D();
+	  Sound.Stream = GD.Load<AudioStream>(path);
+	  Sound.VolumeDb = -38;
+	  AddChild(Sound);
+	  Sound.Play();
+	  isplaying = true;
+	  await ToSignal(Sound, "finished");
+	  isplaying = false;
+	  Sound.QueueFree();
+  }
+  
+  
+
+  
 }

@@ -9,7 +9,6 @@ public class PlayerZone : Area2D
         
     }
     
-
     public void _on_Area2D_area_shape_entered(int id, Area2D area, int areaShape, int selfShape)
     {
         /* REcuperation des loots*/
@@ -23,9 +22,8 @@ public class PlayerZone : Area2D
             area.RemoveFromGroup("loot");
             if (canAdd)
             {
+            	PlayerMouvements.PlaySound(Sounds.Type.PlayerGetloot);
                 loot.QueueFree();
-                PlayerMouvements.PlaySound(Player.Sounds.PlayerGetloot);
-
             }
             else
             {

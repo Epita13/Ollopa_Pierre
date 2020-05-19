@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\pili2\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -23,6 +23,15 @@
             </e>
             <e p="Compactor" t="Include">
               <e p="Compactor.cs" t="Include" />
+            </e>
+            <e p="Infirmary" t="Include">
+              <e p="Infirmary.cs" t="Include" />
+            </e>
+            <e p="O2Generator" t="Include">
+              <e p="O2Generator.cs" t="Include" />
+            </e>
+            <e p="PetrolGenerator" t="Include">
+              <e p="PetrolGenerator.cs" t="Include" />
             </e>
             <e p="Printer3D" t="Include">
               <e p="Printer3D.cs" t="Include" />
@@ -53,6 +62,9 @@
           <e p="UI" t="Include">
             <e p="Building" t="Include">
               <e p="CompactorInterface.cs" t="Include" />
+              <e p="InfirmaryInterface.cs" t="Include" />
+              <e p="O2GeneratorInterface.cs" t="Include" />
+              <e p="PetrolGeneratorInterface.cs" t="Include" />
               <e p="Printer3DInterface.cs" t="Include" />
               <e p="SolarPanelInterface.cs" t="Include" />
               <e p="SpaceShipInterface.cs" t="Include" />
@@ -64,9 +76,17 @@
             <e p="Menus" t="Include">
               <e p="DeathMenu.cs" t="Include" />
               <e p="EndMenu.cs" t="Include" />
+              <e p="other" t="Include">
+                <e p="Animation.cs" t="Include" />
+                <e p="ButtonMenu.cs" t="Include" />
+                <e p="SaveGameBox.cs" t="Include" />
+              </e>
             </e>
             <e p="Notification" t="Include">
               <e p="Notifications.cs" t="Include" />
+            </e>
+            <e p="other" t="Include">
+              <e p="PlayerVariablesShow.cs" t="Include" />
             </e>
             <e p="PlayerInventory" t="Include">
               <e p="UI_PlayerInventory.cs" t="Include" />
@@ -76,6 +96,12 @@
               <e p="Energy" t="Include">
                 <e p="EnergyBar.cs" t="Include" />
                 <e p="PowerBar.cs" t="Include" />
+              </e>
+              <e p="Oxygene" t="Include">
+                <e p="OxygeneBar.cs" t="Include" />
+              </e>
+              <e p="Petrol" t="Include">
+                <e p="PetrolBar.cs" t="Include" />
               </e>
             </e>
             <e p="TestsTemporaire" t="Include">
@@ -95,6 +121,8 @@
             <e p="Game.cs" t="Include" />
           </e>
           <e p="Menus" t="Include">
+            <e p="MenuLoadGame.cs" t="Include" />
+            <e p="MenuNewGame.cs" t="Include" />
             <e p="MenuPlay.cs" t="Include" />
           </e>
           <e p="PlayerTests" t="Include">
@@ -150,6 +178,7 @@
             <e p="Sliders" t="Include">
               <e p="SlideBar.cs" t="Include" />
             </e>
+            <e p="Sounds.cs" t="Include" />
           </e>
         </e>
       </e>

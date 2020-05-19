@@ -14,7 +14,7 @@
 [ext_resource path="res://Assets/Objects/UI/PlayerInventory/PlayerInventory2.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Assets/Scenes/Liquid/Liquid.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Assets/Objects/UI/TestsTemporaire/ValuesPanel.tscn" type="PackedScene" id=14]
-[ext_resource path="res://Assets/Ressources/Sounds/background sound/Gravity.res" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Objects/UI/other/PlayerVariables.tscn" type="PackedScene" id=15]
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 8 )
@@ -88,11 +88,7 @@ visible = false
 
 [node name="ValuesPanel" parent="CanvasLayer" instance=ExtResource( 14 )]
 
+[node name="PlayerVariables" parent="CanvasLayer" instance=ExtResource( 15 )]
+
 [node name="Liquid" parent="." instance=ExtResource( 13 )]
 position = Vector2( 0, 0 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-pause_mode = 2
-stream = ExtResource( 15 )
-volume_db = -6.0
-autoplay = true

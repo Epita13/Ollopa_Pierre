@@ -21,9 +21,8 @@ public class Loot : Node2D
 		 A faire
 			 
  */
-
 	private static Node parent;
-
+	
 	private static bool isInit = false;
 	public static bool IsInit => isInit;
 	public static void IsInitLootTest(string funcName)
@@ -92,7 +91,7 @@ public class Loot : Node2D
 		l.ResetTime();
 		
 	}
-	
+
 	public void AddLoot(int amount)
 	{
 		this.amount += amount;
@@ -267,4 +266,3 @@ public class Loot : Node2D
 		GetNode<Particles2D>("Explosion").Emitting = true;
 	}
 }
-

@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80b0d9a2-812c-4927-a7b1-9d477a6b4184" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.import/Back.png-590c339a114c6df338b26fcbe15139a3.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/Back.png-590c339a114c6df338b26fcbe15139a3.md5" afterDir="false" />
+    <list default="true" id="ed9d29ca-3f24-4450-8503-087ee6473d0a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.import/SolarPanel.png-0c3753ced4339b7751e6c73ce701dd6b.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/SolarPanel.png-0c3753ced4339b7751e6c73ce701dd6b.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.import/SolarPanel.png-0c3753ced4339b7751e6c73ce701dd6b.stex" beforeDir="false" afterPath="$PROJECT_DIR$/.import/SolarPanel.png-0c3753ced4339b7751e6c73ce701dd6b.stex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.import/SolarPanelEnergy.png-94510e96cfa22c1bf426d99d8b1fa0f2.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/SolarPanelEnergy.png-94510e96cfa22c1bf426d99d8b1fa0f2.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.import/SolarPanelEnergy.png-94510e96cfa22c1bf426d99d8b1fa0f2.stex" beforeDir="false" afterPath="$PROJECT_DIR$/.import/SolarPanelEnergy.png-94510e96cfa22c1bf426d99d8b1fa0f2.stex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.import/SolarPanelEnergy2.png-17794759249445bf92b3ca482673366f.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/SolarPanelEnergy2.png-17794759249445bf92b3ca482673366f.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.import/SolarPanelEnergy2.png-17794759249445bf92b3ca482673366f.stex" beforeDir="false" afterPath="$PROJECT_DIR$/.import/SolarPanelEnergy2.png-17794759249445bf92b3ca482673366f.stex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.import/dirt.png-16f9c1b97bef4e0c7e2f1447532e4528.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/dirt.png-16f9c1b97bef4e0c7e2f1447532e4528.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.import/dirt.png-16f9c1b97bef4e0c7e2f1447532e4528.stex" beforeDir="false" afterPath="$PROJECT_DIR$/.import/dirt.png-16f9c1b97bef4e0c7e2f1447532e4528.stex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.import/dirt.png-2b0ae5f6e7e3c0a901673db4c38a5a39.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/dirt.png-2b0ae5f6e7e3c0a901673db4c38a5a39.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.import/grass.png-dc28486fe36b4439606c3855a0ce62ba.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/grass.png-dc28486fe36b4439606c3855a0ce62ba.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.import/stockage.png-76030a5f4df6bdc5ea98b1f1f69fa4a4.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/stockage.png-76030a5f4df6bdc5ea98b1f1f69fa4a4.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.import/stockage.png-76030a5f4df6bdc5ea98b1f1f69fa4a4.stex" beforeDir="false" afterPath="$PROJECT_DIR$/.import/stockage.png-76030a5f4df6bdc5ea98b1f1f69fa4a4.stex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.import/stone.png-697b62b504ba8ac6e93530564c94affd.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/stone.png-697b62b504ba8ac6e93530564c94affd.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.import/ui_no.png-48751f7e8781a7d36d03b621a322f7da.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/ui_no.png-48751f7e8781a7d36d03b621a322f7da.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.import/ui_yes.png-ca9bacf5aefcce02c69ab5c95f6fcee6.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.import/ui_yes.png-ca9bacf5aefcce02c69ab5c95f6fcee6.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharp.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharpEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/assemblies/Debug/GodotSharpEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/assemblies/Debug/api_hash_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/assemblies/Debug/api_hash_cache.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mono/metadata/ide_server_meta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/ide_server_meta.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/metadata/scripts_metadata.editor_player" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/bin/Tools/ThirteenProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/bin/Tools/ThirteenProject.dll" afterDir="false" />
@@ -31,17 +24,21 @@
       <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.mono/temp/obj/Tools/ThirteenProject.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Objects/Autres/Loot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Autres/Loot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Autres/Loot.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Autres/Loot.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Objects/Buildings/SolarPanel/SolarPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Buildings/SolarPanel/SolarPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Particles/Explosion.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Particles/Explosion.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Player/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Player/Player.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Objects/Player/PlayerMouvements.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Player/PlayerMouvements.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Objects/Player/PlayerZone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Player/PlayerZone.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Objects/Tilesets/BlockUITileset.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Tilesets/BlockUITileset.tres" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Objects/Tilesets/BlocksTileset.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Tilesets/BlocksTileset.tres" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Objects/Tools/RayGun/Raygun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Objects/Tools/RayGun/Raygun.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Compactor/Compactor.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Compactor/Compactor.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Compactor/CompactorBody.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Compactor/CompactorBody.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Compactor/CompactorHead.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Compactor/CompactorHead.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Compactor/mask.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Compactor/mask.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Infirmary/Infirmary.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Infirmary/Infirmary.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Infirmary/mask.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Infirmary/mask.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/O2Generator/O2Generator.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/O2Generator/O2Generator.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/O2Generator/mask.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/O2Generator/mask.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Oilwell/body.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Oilwell/body.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Oilwell/hammer.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Oilwell/hammer.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Printer3D/Printer3D.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Printer3D/Printer3D.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Printer3D/Printer3Dbar.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Printer3D/Printer3Dbar.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Printer3D/mask.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Buildings/Printer3D/mask.png.import" afterDir="false" />
@@ -77,10 +74,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/mountains.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/mountains.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/sunlight.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Environement/sunlight.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Items/Sonar.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Items/Sonar.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Items/dirt.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Items/dirt.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Items/loot/loot.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Items/loot/loot.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Joueur/All_animation.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Joueur/All_animation.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Joueur/PointLigth.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Joueur/PointLigth.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Joueur/SpotLigth.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Joueur/SpotLigth.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/inventoryPanel.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/inventoryPanel.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/inventoryPanel2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/inventoryPanel2.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/energy/energy.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/energy/energy.png.import" afterDir="false" />
@@ -88,33 +85,46 @@
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/energy/energyArrowMask.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/energy/energyArrowMask.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/energy/energyArrowbar.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/energy/energyArrowbar.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/energy/energybar.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/energy/energybar.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/oxygenebar.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/oxygenebar.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/petrolbar.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/petrolbar.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/stockage.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Inventory/sliders/stockage.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/PlayMenu/LoadGame.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/PlayMenu/LoadGame.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/PlayMenu/NewGame.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/PlayMenu/NewGame.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/PlayMenu/OllopaLogo.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/PlayMenu/OllopaLogo.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/PlayMenu/Setting.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/PlayMenu/Setting.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/PlayMenu/background.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/PlayMenu/background.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/Skull.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/Menus/Skull.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/slide/white.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/UI/slide/white.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/dirt.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/dirt.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/grass.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/grass.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/iron_block.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/iron_block.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/stone.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/stone.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/warning_block.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Blocks/warning_block.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Beam.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Beam.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Begin.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Begin.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Particle_Ray.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Particle_Ray.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Raygun.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Raygun.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Sparkle.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/Sparkle.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/ray.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/ray.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/ray2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/Usables/Tools/Raygun/ray2.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/Back/Back.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/Back/Back.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_break.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_break.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_no.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_no.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_place.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_place.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_yes.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/UI/ui_yes.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/dirt.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/dirt.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/grass.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/grass.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/iron_block.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/iron_block.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/ospiriteOre.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/ospiriteOre.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/sonarOre.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/sonarOre.png.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/stone.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/stone.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/warning_block.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/warning_block.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/warning_block1.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/warning_block1.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/warning_block2.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/warning_block2.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/westStone.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Imgs/blocks/westStone.png.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Sounds/Blocks/BlockBreak.wav.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Sounds/Blocks/BlockBreak.wav.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Sounds/Player/player_WalkingonStone.wav.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Sounds/Player/player_WalkingonStone.wav.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Ressources/Sounds/Player/player_death.wav.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Sounds/Player/player_death.wav.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Sounds/Player/player_getloot.wav.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Sounds/Player/player_getloot.wav.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Sounds/Player/player_laser.wav.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Sounds/Player/player_laser.wav.import" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ressources/Sounds/Player/walkonStone.wav.import" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ressources/Sounds/Player/walkonStone.wav.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jeux/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jeux/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Jeux/Game.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Jeux/Game.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menus/MenuLoadGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menus/MenuLoadGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SceneGeneration/SceneGenerationScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SceneGeneration/SceneGenerationScript.cs" afterDir="false" />
@@ -122,13 +132,13 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Autres/Paralax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Autres/Paralax.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Block.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Block.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Building.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Cave.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Cave.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Chunk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Chunk.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/PlayerState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/StorageBuildings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/StorageBuildings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/StorageItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/StorageItems.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/World.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/World.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tools/Sounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tools/Sounds.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/default_env.tres" beforeDir="false" afterPath="$PROJECT_DIR$/default_env.tres" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.12.0.3/packageIcon.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/packages/Newtonsoft.Json.12.0.3/packageIcon.png.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
@@ -143,34 +153,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Objects/Autres/Loot.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Cave.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Objects/Player/PlayerInputs.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tools/ScreenAdapt.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Objects/Autres/Tree/Tree.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Jeux/Game.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Building.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menus/MenuLoadGame.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tools/Sliders/SlideBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/PlayerState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Objects/Player/PlayerZone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tools/Sounds.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/StorageBuildings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Objects/Tools/RayGun/Raygun.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Ore.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Link.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Objects/Player/PlayerMouvements.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/Jeux/Game.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Objects/Tools/RayGun/Raygun.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Cave.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tools/Sound.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tools/sound/Sound.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scenes/sound/Sound.cs" />
-        <option value="$PROJECT_DIR$/Assets/Objects/Autres/Loot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Objects/Player/PlayerMouvements.cs" />
-        <option value="$PROJECT_DIR$/Assets/Objects/Player/PlayerZone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Menus/MenuLoadGame.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Menus/MenuPlay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/Jeux/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Objects/Player/PlayerMouvements.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tools/Sounds.cs" />
       </list>
     </option>
   </component>
@@ -181,12 +186,11 @@
       </set>
     </option>
   </component>
-  <component name="ProjectId" id="1blpKZxMJiUkSlbxsCBTLQIboXR" />
+  <component name="ProjectId" id="1c2cKIxXVpvyVCNfxqfz90aAhfV" />
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assets/Scripts/Tools/sound" />
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
   </component>
   <component name="RunDashboard">
@@ -206,17 +210,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="80b0d9a2-812c-4927-a7b1-9d477a6b4184" name="Default Changelist" comment="" />
-      <created>1589216476737</created>
+      <changelist id="ed9d29ca-3f24-4450-8503-087ee6473d0a" name="Default Changelist" comment="" />
+      <created>1589730070707</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1589216476737</updated>
-      <workItem from="1589216488909" duration="2852000" />
-      <workItem from="1589282177845" duration="5042000" />
-      <workItem from="1589551219259" duration="1953000" />
-      <workItem from="1589640485026" duration="147000" />
-      <workItem from="1589640686952" duration="6337000" />
-      <workItem from="1589722443542" duration="4027000" />
+      <updated>1589730070707</updated>
+      <workItem from="1589730081724" duration="772000" />
+      <workItem from="1589731093212" duration="1367000" />
+      <workItem from="1589807753554" duration="8962000" />
     </task>
     <servers />
   </component>

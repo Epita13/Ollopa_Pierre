@@ -3,7 +3,7 @@ using System;
 
 public class Cave
 {
-    private static double initchance = 0.41F;
+    private static double initchance = 0.432F;
     private static int xmax = World.size * Chunk.size;
     private static int ymax = Chunk.maxYGeneration;
     private static int deathlimit = 4;
@@ -12,13 +12,12 @@ public class Cave
 
     public static bool[,] InitBasicCave()
     {
-        Random rand = new Random();
         bool[,] map = new bool[xmax,ymax];
         for (int i = 0; i < xmax; i++)
         {
             for (int j = 0; j < ymax; j++)
             {
-                if (rand.NextDouble() < initchance)
+                if (World.random.NextDouble() < initchance)
                     map[i, j] = true;
             }
         }

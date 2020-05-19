@@ -25,6 +25,9 @@ public class BuildingInterface : Control
         {Building.Type.Storage, GD.Load<PackedScene>("res://Assets/Objects/UI/Building/StorageInterface.tscn")},
         {Building.Type.Printer3D, GD.Load<PackedScene>("res://Assets/Objects/UI/Building/Printer3DInterface.tscn")},
         {Building.Type.Compactor, GD.Load<PackedScene>("res://Assets/Objects/UI/Building/CompactorInterface.tscn")},
+        {Building.Type.Infirmary, GD.Load<PackedScene>("res://Assets/Objects/UI/Building/InfirmaryInterface.tscn")},
+        {Building.Type.O2Generator, GD.Load<PackedScene>("res://Assets/Objects/UI/Building/O2GeneratorInterface.tscn")},
+        {Building.Type.OilPump, GD.Load<PackedScene>("res://Assets/Objects/UI/Building/PetrolGeneratorInterface.tscn")},
     };
 
     public static bool interfaceOpen = false;

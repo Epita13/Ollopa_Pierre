@@ -6,21 +6,6 @@ public static class Player
 {
 	
 
-	/*Player sounds*/
-	public enum Sounds
-	{
-		PlayerDeath,
-		PlayerGetloot,
-		PlayerLaser
-	}
-	public static Dictionary<Sounds, AudioStream> sounds = new Dictionary<Sounds, AudioStream>
-	{
-		{Sounds.PlayerDeath, GD.Load<AudioStream>("res://Assets/Ressources/Sounds/Player/player_death.wav")},
-		{Sounds.PlayerGetloot, GD.Load<AudioStream>("res://Assets/Ressources/Sounds/Player/player_getloot.wav")},
-		{Sounds.PlayerLaser, GD.Load<AudioStream>("res://Assets/Ressources/Sounds/Player/player_laser.wav")}
-	};
-	
-	
 	
 	public static float healthMax = 100.0f;
 	public static float health = 100.0f;
@@ -61,6 +46,7 @@ public static class Player
 	/// Enleve de la vie au joueur.
 	public static void RemoveHealth(float amount)
 	{
+		PlayerMouvements.PlaySound(Sounds.Type.PlayerHurt);
 		health -= amount;
 		if (health<0)
 			health = 0;
@@ -135,7 +121,7 @@ public static class Player
 			inventoryBuildings = new StorageBuildings(inventoryBuildingsSize);
 			UsableSelected = Usable.Type.Laser;
 			BuildingSelected = Building.Type.SolarPanel;
-			PlayerMouvements.Teleport(PlayerMouvements.initialPosition.x, PlayerMouvements.initialPosition.y);
+			PlayerMouvements.Teleport(World.spawn.x, World.spawn.y);
 			PlayerMouvements.canMove = true;
 		}
 	}
