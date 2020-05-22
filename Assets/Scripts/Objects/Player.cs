@@ -11,25 +11,24 @@ public static class Player
 	public static float health = 100.0f;
 
 	public static float oxygeneMax = 100.0f;
-	public static float oxygene = 100.0f;
-	public static float oxygeneLoss = 0.7f;
-	public static float oxygeneDamage = 10.0f;
+	public static float oxygene = 100f;
+	public static float oxygeneLoss = 0.4f;
+	public static float oxygeneDamage = 3.0f;
 
 	public static float energyMax = 100.0f;
-	public static float energy = 100.0f;
-	public static float energyLoss = 0.4f;
+	public static float energy = 50.0f;
 	public static float energyDamage = 0.1f;
 
 	// Ex : laser, blocks..
-	private static int inventoryUsablesSize = 100;
+	public static int inventoryUsablesSize = 100;
 	public static  StorageUsables inventoryUsables = new StorageUsables(inventoryUsablesSize);
 	// Ex : bois, composite (matieres premieres)
-	private static int inventoryItemsSize = 20000;
+	public static int inventoryItemsSize = 20000;
 	public static StorageItems inventoryItems = new StorageItems(inventoryItemsSize);
 	// Ex : eau, petrole (Liquide)
-	private static float inventoryLiquidsSize = 30.0f;
+	public static float inventoryLiquidsSize = 100.0f;
 	public static StorageLiquids inventoryLiquids = new StorageLiquids(inventoryLiquidsSize);
-	private static int inventoryBuildingsSize = 10;
+	public static int inventoryBuildingsSize = 10;
 	public static StorageBuildings inventoryBuildings = new StorageBuildings(inventoryBuildingsSize);
 
 

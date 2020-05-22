@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class MenuLoadGame : Node2D
 {
     private static PackedScene SaveBox = GD.Load<PackedScene>("res://Assets/Objects/UI/Menus/other/SaveGameBox.tscn");
-   
 
     private int page = 0;
     private int pageNumber;
@@ -117,7 +116,7 @@ public class MenuLoadGame : Node2D
         {
             Game.load = true;
             Game.saveName = saveSelected;
-            World.SetSaveName(saveSelected);
+            Game.saveName = saveSelected;
             GetTree().ChangeScene("res://Assets/Scenes/Jeux/Game.tscn");
         }
     }

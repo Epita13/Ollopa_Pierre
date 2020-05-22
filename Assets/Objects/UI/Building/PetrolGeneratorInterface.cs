@@ -43,11 +43,11 @@ public class PetrolGeneratorInterface : BuildingInterface
     {
         if (petrolGenerator.oil > 0)
         {
-            petrolGenerator.togive += Math.Min(petrolGenerator.oil, Player.oxygeneMax - Player.oxygene);
+            petrolGenerator.togive += petrolGenerator.oil;
         }
     }
 
-    public void _on_TimerOxygene_timeout()
+    public void _on_Timer_timeout()
     {
         EmitSignal("ChangePetrolBar", petrolGenerator.oil, petrolGenerator.oilMAX);
     }

@@ -7,7 +7,7 @@ public class PlayerMouvements : KinematicBody2D
 
 	/*Sound*/
 	private AudioStreamPlayer2D audioStream;
-	private int timer = 0;
+	private float timer = 0;
 	private bool plouf = true;
 
 	public static bool HasPlayer = false;
@@ -136,12 +136,12 @@ public class PlayerMouvements : KinematicBody2D
 			if(IsOnFloor())
 				bond.Play("Turn_Back");
 		}
-
 		if ((move_left || move_right) && IsOnFloor())
 		{
 			if(timer%15 == 0)
 				PlayerMouvements.PlaySound(Sounds.Type.PlayerStep);
 		}
+
 	}
 	private void JUMP(float delta)
 	{
@@ -153,13 +153,13 @@ public class PlayerMouvements : KinematicBody2D
 			vel.y = 0;
 		}
 
-		if (plouf && !on_ground && IsInWater())
+		if (plouf && !on_ground && LiquidCoefMove != 1.0f)
 		{
 			PlayerMouvements.PlaySound(Sounds.Type.PlayerPlouf);
 			plouf = false;
 		}
 
-		if (!IsInWater() && timer % 5 == 0)
+		if (LiquidCoefMove == 1.0f)
 			plouf = true;
 
 		if (LiquidCoefMove != 1.0f && Input.IsActionPressed("ui_up"))
@@ -183,6 +183,7 @@ public class PlayerMouvements : KinematicBody2D
 	{
 		AnimationPlayer bond = GetNode<AnimationPlayer>("AnimationPlayer");
 		Sprite image = GetNode<Sprite>("Image");
+
 		if(!isplaying)
 			InitSound("res://Assets/Ressources/Sounds/background sound/Gravity.res");
 
@@ -247,24 +248,20 @@ public class PlayerMouvements : KinematicBody2D
 		MoveAndSlide(vel,UP);
 	}
 
-	
 	public override void _Process(float delta)
   {
-	  timer += 1;
-	  if (World.IsInit)
+  		timer += delta;
+		if (World.IsInit)
 		{
 			WorldEndTeleportation();
 		}
 		Player.RemoveOxygene(Player.oxygeneLoss*delta);
-		Player.RemoveEnergy(Player.energyLoss*delta);
 		if (Player.oxygene == 0)
 		{
-			if(timer % 100 == 0 && PlayerState.GetState() != PlayerState.State.Dead)
-				Player.RemoveHealth(Player.oxygeneDamage*100*delta);
-		}
-		if (Player.energy == 0)
-		{
-			Player.RemoveHealth(Player.energyDamage*delta);
+			if(timer >= 1 && PlayerState.GetState() != PlayerState.State.Dead){
+				Player.RemoveHealth(Player.oxygeneDamage*1);
+				timer = 0;
+			}
 		}
   }
 
@@ -369,7 +366,7 @@ public class PlayerMouvements : KinematicBody2D
   {
 	  AudioStreamPlayer2D Sound = new AudioStreamPlayer2D();
 	  Sound.Stream = GD.Load<AudioStream>(path);
-	  Sound.VolumeDb = -38;
+	  Sound.VolumeDb = -20;
 	  AddChild(Sound);
 	  Sound.Play();
 	  isplaying = true;

@@ -49,8 +49,6 @@ public static class World
 
 	public static Random random;
 
-	public static string saveName = "default";
-
 	// SimplexNoise
 	public static OpenSimplexNoise noise = new OpenSimplexNoise();
 	private static int seed=-1;
@@ -62,6 +60,11 @@ public static class World
 	public static int size = 10;
 	public static List<Chunk> chunks;
 	public static List<(int,int)> visibleChunks = new List<(int,int)>();
+	
+	
+	public static List<Building> placedBuildings = new List<Building>();
+	public static Dictionary<Chunk, List<Building>> placedBuildingByChunk = new Dictionary<Chunk, List<Building>>();
+	
 	
 	public static List<Tree> trees = new List<Tree>();
 
@@ -81,10 +84,6 @@ public static class World
 	public static void SetSeed(int seed)
 	{
 		World.seed = seed;
-	}
-	public static void SetSaveName(string name)
-	{
-		World.saveName = name;
 	}
 	/// Initialise le monde et le calcule.
 	public static void Init(TileMap BlockTilemap, TileMap UIBlockTilemap, TileMap UI2BlockTilemap, TileMap BackBlockTilemap, bool generate = true)
@@ -133,6 +132,7 @@ public static class World
 		{
 			Chunk instance_chunk = new Chunk(x);
 			chunks.Add(instance_chunk);
+			placedBuildingByChunk.Add(instance_chunk, new List<Building>());
 		}
 		SeasGenerate();
 		CaveGenerate();

@@ -40,7 +40,6 @@ public static class PlaceBlock
         if (CanPlace(x, y, out res))
         {
             World.GetChunk(x).AddBlock(Chunk.GetLocaleX(x), y, displayX, displayY, type);
-            Save._Save(World.saveName);
             Delay.StartDelay(World.BlockTilemap, 0.3f,
                 () =>
                 {
@@ -64,9 +63,9 @@ public static class PlaceBlock
         y = (int)vec.y;
         int i = 0;
         bool res = false;
-        while (i < Building.placedBuildings.Count)
+        while (i < World.placedBuildings.Count)
         {
-            Building b = Building.placedBuildings[i];
+            Building b = World.placedBuildings[i];
             if (b.IsInBuilding(x, y))
                 res = true;
             i++;

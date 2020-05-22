@@ -30,7 +30,7 @@ public class Block
 		{Type.Dirt, new Drop(new Drop.Loot(Item.Type.Dirt,1))},
 		{Type.WestStone, null},
 		{Type.SonarOre, new Drop(new Drop.Loot(Item.Type.Sonar, 1))},
-		{Type.OspiritOre, new Drop(new Drop.Loot(Item.Type.Composite, 1))},
+		{Type.OspiritOre, new Drop(new Drop.Loot(Item.Type.Ospirit, 1))},
 		{Type.WarningBlock, new Drop(new Drop.Loot(Item.Type.Composite, 1)) },
 		{Type.IronBlock, new Drop(new Drop.Loot(Item.Type.Composite, 1))},
 	};
@@ -38,7 +38,7 @@ public class Block
 	public static Dictionary<Type, float> durabilities = new Dictionary<Type, float>
 	{
 		{Type.Air, -1.0f},
-		{Type.Stone, 100.0f},
+		{Type.Stone, 80.0f},
 		{Type.Grass, 40.0f},
 		{Type.Dirt, 30.0f},
 		{Type.WestStone, -1.0f},

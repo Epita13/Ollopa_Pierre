@@ -39,5 +39,4 @@ public static class Sounds
         {Type.PlayerPlouf, -20},
         {Type.PlayerLanding, -28}
     };
-    
 }

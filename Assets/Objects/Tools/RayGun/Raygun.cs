@@ -6,8 +6,9 @@ public class Raygun : Node2D
 {
 
 
-	public const float POWER = 3.5f;
-	public const float RADIUS =350f;
+	public const float POWER = 0.3f;
+	public const float RADIUS = 350f;
+	public const float POWERENERGY = 1.0f;
 
 	public const bool can_shoot = true;
 	private bool isalreadyshooting = false;
@@ -126,9 +127,14 @@ public class Raygun : Node2D
 	public override void _Process(float delta)
 	{
 		if (PlayerState.GetState() != PlayerState.State.Normal || Player.UsableSelected != Usable.Type.Laser)
+		{
+			Visible = false;
 			return;
-		
-		LookAt(GetGlobalMousePosition());
+		}
+
+		Visible = true;
+
+			LookAt(GetGlobalMousePosition());
 		if (GlobalRotation < -Mathf.Pi / 2 || GlobalRotation > Mathf.Pi / 2)
 		{
 			anSprite.FlipV = true;
@@ -143,13 +149,26 @@ public class Raygun : Node2D
 
 		if (Input.IsActionPressed("mouse1"))
 		{
-			shoot();
-			particule.Emitting = true;
-			if (!isalreadyshooting)
+			if (Player.energy > 0)
 			{
-				PlayerMouvements.PlaySound(Sounds.Type.PlayerLaser);
-				isalreadyshooting = true;
+				GD.Print(Player.energy);
+				shoot();
+				particule.Emitting = true;
+				Player.RemoveEnergy(POWERENERGY*delta);
+				if (!isalreadyshooting)
+				{
+					PlayerMouvements.PlaySound(Sounds.Type.PlayerLaser);
+					isalreadyshooting = true;
+				}
 			}
+			else
+			{
+				begin.Visible = false;
+				beam.Visible = false;
+				particule.Emitting = false;
+			}
+
+			shoot();
 		}
 		if (Input.IsActionJustReleased("mouse1"))
 		{

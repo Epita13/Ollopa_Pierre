@@ -9,11 +9,20 @@ public class Game : Node2D
 
 	public static Node2D root;
 	public static float WorldScreenSizeX;
-	//public AudioStreamPlayer2D sound = InitSound("res://Assets/Ressources/Sounds/background sound/Gravity.res");
+
+	public static float timePlayed = 0;
+
+	public static string GetTimePlayedString()
+	{
+		int hours = Mathf.FloorToInt(timePlayed/3600);
+		int minutes = Mathf.FloorToInt((timePlayed%3600)/60);
+		int seconds = Mathf.FloorToInt(timePlayed % 60);
+		return hours + "hour " + minutes + "min " + seconds + "sec";
+	}
+	
 
 	public override void _EnterTree()
 	{
-		//AddChild(sound);
 		Camera2D camera = GetNode<Camera2D>("Player/Camera2D");
 		CurrentCamera.Init(camera);
 		root = this;
@@ -54,37 +63,27 @@ public class Game : Node2D
 
 	private void InitialiseIverntories()
 	{
-		Player.inventoryUsables.Add(Usable.Type.Dirt, 30);
-		Player.inventoryUsables.Add(Usable.Type.Grass, 30);
-		Player.inventoryUsables.Add(Usable.Type.Stone, 300);
-		Player.inventoryBuildings.Add(Building.Type.SolarPanel, 2);
-		Player.inventoryBuildings.Add(Building.Type.Storage, 3);
-		Player.inventoryBuildings.Add(Building.Type.Printer3D, 3);
-		Player.inventoryBuildings.Add(Building.Type.Compactor, 3);
-		Player.inventoryBuildings.Add(Building.Type.Infirmary, 3);
-		Player.inventoryBuildings.Add(Building.Type.O2Generator, 3);
-		Player.inventoryBuildings.Add(Building.Type.OilPump, 3);
-		Player.inventoryItems.Add(Item.Type.Composite, 120);
-		
+		Player.inventoryBuildings.Add(Building.Type.Thermogenerator, 1);
+		Player.inventoryBuildings.Add(Building.Type.SolarPanel, 1);
+		Player.inventoryItems.Add(Item.Type.Wood,10);
+		Player.inventoryLiquids.Add(Liquid.Type.Oil,10);
+		Player.inventoryUsables.Add(Usable.Type.Dirt, 10);
 	}
 
 
 	public override void _Process(float delta)
 	{
 		WorldScreenSizeX = GetViewport().Size.x * CurrentCamera.GetXZoom();
-		//if(sound.Playing == false)
-		//	sound.Play();
+		timePlayed += delta;
 	}
 
 	public static float GetScreenMinX() => PlayerMouvements.GetX() - (Convertion.Location2World(new Vector2(Game.WorldScreenSizeX/2, 0))).x;
 	public static float GetScreenMaxX() => PlayerMouvements.GetX() + (Convertion.Location2World(new Vector2(Game.WorldScreenSizeX/2, 0))).x;
-	
-	/*public static AudioStreamPlayer2D InitSound(string path)
-	{
-		AudioStreamPlayer2D Sound = new AudioStreamPlayer2D();
-		Sound.Stream = GD.Load<AudioStream>(path);
-		Sound.VolumeDb = 20;
-		return Sound;
-	}*/
 
+
+	public void _on_BTNSAVE_button_down()
+	{
+		GD.Print(saveName + " de");
+		Save._Save(saveName);
+	}
 }

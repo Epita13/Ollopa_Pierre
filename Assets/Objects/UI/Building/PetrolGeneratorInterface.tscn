@@ -217,7 +217,7 @@ margin_right = -328.864
 margin_bottom = 136.441
 rect_scale = Vector2( 0.5, 0.5 )
 
-[node name="TimerOxygene" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="."]
 wait_time = 0.1
 autostart = true
 
@@ -229,8 +229,8 @@ autostart = true
 [connection signal="ChangePowerInBar" from="." to="back2/PowerInBar" method="Change"]
 [connection signal="ChangePowerOutBar" from="." to="back2/PowerOutBar" method="Change"]
 [connection signal="button_down" from="back/BtnPetrol" to="." method="_on_BtnO2_button_down"]
-[connection signal="value_changed" from="back2/HSlider" to="back2/Graph3" method="_on_HSlider_value_changed"]
-[connection signal="value_changed" from="back2/HSlider" to="back2/Graph" method="_on_HSlider_value_changed"]
 [connection signal="value_changed" from="back2/HSlider" to="back2/Graph2" method="_on_HSlider_value_changed"]
-[connection signal="timeout" from="TimerOxygene" to="." method="_on_TimerOxygene_timeout"]
+[connection signal="value_changed" from="back2/HSlider" to="back2/Graph" method="_on_HSlider_value_changed"]
+[connection signal="value_changed" from="back2/HSlider" to="back2/Graph3" method="_on_HSlider_value_changed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="TimerEnergy" to="." method="_on_TimerEnergy_timeout"]
